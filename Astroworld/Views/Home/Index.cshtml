@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Astroworld</title>
+</head>
+
+<body>
+
+    <!--This is the navigation section where all the different pages are displayed using bootstrap4-->
+    <!---Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="~/Views/Home/Index.cshtml"><img src="~/Content/images/logo.gif"></a>
+        </div>
+    </nav>
+
+
+    <!--- Image Slider-->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Content/images/background.png">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Astroworld</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Summary section-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">
+                    Astroworld is the third studio album by American rapper and record producer Travis Scott. It was released on August 3, 2018, through Cactus Jack Records and Grand Hustle Records, and distributed by Epic Records. The album follows his second studio album Birds in the Trap Sing McKnight (2016), and his collaborative album Huncho Jack, Jack Huncho (2017) with Quavo. The album features guest vocals from Kid Cudi, Frank Ocean, Drake, The Weeknd, James Blake, Swae Lee, Gunna, Philip Bailey, Nav, 21 Savage, Quavo, Takeoff, Juice Wrld, Sheck Wes, and Don Toliver, among others. Production was handled by multiple producers, including Mike Dean, Allen Ritter, Hit-Boy, WondaGurl, Tay Keith, Tame Impala, Frank Dukes, Sonny Digital, and Thundercat.
+
+                    Astroworld was supported by four singles, "Butterfly Effect", "Sicko Mode", "Yosemite", and "Wake Up". The album received widespread acclaim and performed well commercially, debuting atop the US Billboard 200 with 537,000 album-equivalent units, of which 270,000 were pure sales. It was certified triple platinum by the Recording Industry Association of America (RIAA). Astroworld was nominated for Best Rap Album at the 2019 Grammy Awards, with "Sicko Mode" receiving nominations for Best Rap Performance and Best Rap Song.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--This section contains the tracklist-->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center padding">
+            <div class="col-12">
+                <h1 class="display-4">Tracklist:</h1>
+            </div>
+            <hr>
+            <div class="col-6">
+                <p class="lead">1."Stargazing"</p>
+                <p class="lead">2."Carousel"</p>
+                <p class="lead">3."Sicko Mode"</p>
+                <p class="lead"> 4."NC-17"</p>
+                <p class="lead">5."Wake Up"</p>
+                <p class="lead">6."No Bystanders"</p>
+                <p class="lead">7."Skeletons" </p>
+                <p class="lead"> 8."Coffee Bean"</p>
+                <p class="lead"> 9."Houstonfornication"</p>
+                <p class="lead">10."WHO? WHAT! </p>
+                <p class="lead">11."YOSEMITE" </p>
+                <p class="lead">12."Cant't Say"</p>
+                <p class="lead">13."Butterfly Effect" </p>
+                <p class="lead">14."Astrothunder"</p>
+                <p class="lead">15."5% Tint"</p>
+                <p class="lead">16."R.I.P Screw"</p>
+                <p class="lead">17."Stop Trying To Be God"</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="~/Content/images/tracklist.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--Three Column Section-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP 4</h3>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fab fa-css3"></i>
+                <h3>CSS3</h3>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+
+
+    <!--Fixed background-->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure>
+
+
+    <!--Connect-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Find Travis Scott On...</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.instagram.com/trvisXX/" <i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/TravisScottXX/videos"<i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-12">
+                    <hr class="light">
+                    <p>Martin Kalchev</p>
+                    <p>martinkalchev97@gmail.com</p>
+                    <p>Sofia, Bulgaria, 1000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+

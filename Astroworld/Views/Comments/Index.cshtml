@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Comments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Comments Section</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Astroworld</title>
+</head>
+
+<body>
+
+    <!--This is the navigation section where all the different pages are displayed-->
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="~/Views/Home/Index.cshtml"><img src="~/Content/images/logo.gif"></a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Container-->
+
+    <div class="container-fluid ">
+        <div class="row welcome text-center ">
+            <div class="col-12">
+                <h1 class="display-4">Social Section</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <p>
+        <a href="/Comments/Create">Add a new comment</a>
+    </p>
+
+    @foreach (var entry in ViewBag.Entries)
+    {
+        <section class="contact">
+            <header>
+                <h3>@entry.Message</h3>
+            </header>
+            <p>
+                Posted by @entry.Name on @entry.DateAdded.ToLongDateString()
+            </p>
+        </section>
+    }
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-12">
+                    <hr class="light">
+                    <p>Martin Kalchev</p>
+                    <p>martinkalchev97@gmail.com</p>
+                    <p>Sofia, Bulgaria, 1000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <hr id="bottom-line">
+
+</body>
+
+</html>
